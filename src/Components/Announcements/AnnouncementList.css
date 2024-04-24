@@ -1,0 +1,41 @@
+/* AnnouncementList.css */
+.announcement-list {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .announcement-list h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .announcement-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .announcement-list li {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .announcement-list h3 {
+    color: #555;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .announcement-list p {
+    color: #777;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .announcement-list span {
+    color: #999;
+    font-size: 14px;
+  }

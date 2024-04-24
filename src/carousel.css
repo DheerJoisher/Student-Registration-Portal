@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.carousel-container {
+    margin-top: 200px; /* Adjust according to your navbar height */
+    margin-bottom: 50px; /* Adjust according to your footer height */
+  }
+  
+  .carousel-item {
+    text-align: center;
+  }
+  
+  .carousel-image {
+    width: 70%; /* Adjust as needed */
+    height: auto;
+    margin: 0 auto; /* Center horizontally */
+  }
+  
