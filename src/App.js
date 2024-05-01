@@ -2,51 +2,53 @@ import './App.css';
 import {
   BrowserRouter as Router,
   Routes,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import MainPage from './Components/Main/MainPage';
-
+// import Login from './Components/Login/Login';
 import Navbar1 from './Components/Navbar/Navbar1';
 import Footer from './Components/Footer/Footer';
 import Courses from './Components/Courses/Courses';
 import Professor from './Components/Professor/Professor';
 import MyCalendar from './Components/MyCalendar/MyCalendar';
 import Announcements1 from './Components/Announcements/Announcements1';
-import StudentC from './Components/Carousel/CarouselMain';
 import CarouselMain from './Components/Carousel/CarouselMain';
-
 
 function App() {
   return (
-    <>
-
-      <Router>
-        <Navbar1/>
-       
+    <Router>
+      <div>
+        <Navbar1 />
         <div className="container">
           <Routes>
-            <Route path="/courses" element={<Courses/>} />
-            <Route path="/" element={<MainPage/>} />
-            <Route path="/professor" element={<Professor/>} />
-            <Route path="/Calendar" element={<MyCalendar/>} />
-            <Route path="/Announcements" element={<Announcements1/>} />
-            <Route path="/Carousel" element={<CarouselMain/>} />
-            {/* <Route path="/login" element={<Login/>} /> */}
-
-
-
+            <Route path="/courses" element={<Courses />} />
+            {/* <Route path="/login" element={<Login />} /> */}
+            {/* 
+              If you have a page where you don't want Navbar and Footer, 
+              don't include them in the Routes component.
+            */}
+            <Route path="/special-page" element={<SpecialPageContent />} />
+            <Route path="/" element={<MainPage />} />
+            <Route path="/professor" element={<Professor />} />
+            <Route path="/calendar" element={<MyCalendar />} />
+            <Route path="/announcements" element={<Announcements1 />} />
+            <Route path="/carousel" element={<CarouselMain />} />
           </Routes>
         </div>
-        <Footer/>
+        <Footer />
+      </div>
+    </Router>
+  );
+}
 
-      </Router>
-
-
-
+// SpecialPageContent component without Navbar and Footer
+function SpecialPageContent() {
+  return (
+    <>
+      <h1>This is a special page without Navbar and Footer</h1>
+      <p>This is the content of the special page.</p>
     </>
   );
-
 }
 
 export default App;

@@ -1,7 +1,7 @@
 import React from 'react';
 import './MainPage.css';
 import img from './img.png';
-
+import { Link } from 'react-router-dom';
 export default function MainPage() {
   return (
     <div className="main-page-container">
@@ -10,7 +10,7 @@ export default function MainPage() {
           <h2 >Welcome to Our University</h2>
           <p>This is the text content section.<br/> You can add any information you want to display here.</p>
           <div className="login-button">
-            <a href="LoginPage.html">Login</a>
+          <Link to="/login">Login</Link>
           </div>
         </div>
         <div className="image-content">
