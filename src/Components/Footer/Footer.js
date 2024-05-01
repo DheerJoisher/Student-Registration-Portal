@@ -1,8 +1,9 @@
 import React from 'react';
+import './Footer.css';
 
 function Footer() {
   return (
-    <footer style={{ backgroundColor: '#D4A373', color: 'black', paddingTop: '20px', textAlign: 'center', display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap' }}>
+    <footer>
       <div className="footer-column">
         <h3>Contact Us</h3>
         <p>123 University Ave,</p>
@@ -11,11 +12,10 @@ function Footer() {
       </div>
       <div className="footer-column">
         <h3>Quick Links</h3>
-        <ul style={{ listStyle: 'none', padding: 0 }}>
+        <ul>
           <li><a href="#">Courses</a></li>
           <li><a href="#">Professors</a></li>
           <li><a href="#">Calendar</a></li>
-         
         </ul>
       </div>
       <div className="footer-column">
