@@ -4,16 +4,16 @@ import './AnnouncementList.css';
 
 let announcement=[
     {
-        title:"Parso is holi",
-        details:"Happy Holi"
+        title:"End Semester Exams",
+        details:"The End Semester Exams will be conducted from 24th May - 7th June."
     },
     {
-        title:"Today we messed up",
-        details:"messed up"
+        title:"Make-Up MST",
+        details:"All students who have missed their Mid Semester papers due to any reasons, exams will be conducted for them from 29th April to 3rd May."
     },
     {
-        title:"We did something good.",
-        detail:"lmao noob"
+        title:"Practical Exams",
+        detail:"Practical Examinations will be conducted from 11th May - 15th May."
     }
 ]
 const AnnouncementList = () => {

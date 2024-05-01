@@ -13,7 +13,8 @@ import Courses from './Components/Courses/Courses';
 import Professor from './Components/Professor/Professor';
 import MyCalendar from './Components/MyCalendar/MyCalendar';
 import Announcements1 from './Components/Announcements/Announcements1';
-import StudentC from './Components/Carousel/StudentC';
+import StudentC from './Components/Carousel/CarouselMain';
+import CarouselMain from './Components/Carousel/CarouselMain';
 
 
 function App() {
@@ -30,7 +31,7 @@ function App() {
             <Route path="/professor" element={<Professor/>} />
             <Route path="/Calendar" element={<MyCalendar/>} />
             <Route path="/Announcements" element={<Announcements1/>} />
-            <Route path="/Carousel" element={<StudentC/>} />
+            <Route path="/Carousel" element={<CarouselMain/>} />
             {/* <Route path="/login" element={<Login/>} /> */}
 
 

@@ -1,25 +1,29 @@
 import React from 'react';
 import './Footer.css';
-
+import { Link } from 'react-router-dom';
 function Footer() {
   return (
-    <footer>
+    <footer className="footer-container">
       <div className="footer-column">
-        <h3>Contact Us</h3>
-        <p>123 University Ave,</p>
-        <p>City, Country</p>
-        <p>Email: info@bbcuniversity.com</p>
-      </div>
-      <div className="footer-column">
-        <h3>Quick Links</h3>
+      <h2 style={{ fontSize: '20px' }}><b>Contact Us</b></h2>
         <ul>
-          <li><a href="#">Courses</a></li>
-          <li><a href="#">Professors</a></li>
-          <li><a href="#">Calendar</a></li>
+          <li>FY IT</li>
+          <li>231080012, 231080020</li>
+          <li>231081039, 231081042</li>
+          <li>231081074</li>
         </ul>
       </div>
       <div className="footer-column">
-        <h3>Follow Us</h3>
+        <h2 style={{ fontSize: '20px' }}><b>Quick Links</b></h2>
+        <ul>
+          <li><Link to="/courses">Courses</Link></li>
+          <li><Link to="/professor">Professors</Link></li>
+          <li><Link to="/Announcements">Announcements</Link></li>
+          <li><Link to="/calendar">Calender</Link></li>
+        </ul>
+      </div>
+      <div className="footer-column">
+        <h2 style={{ fontSize: '20px' }}><b>Follow Us</b></h2>
         <div className="social-icons">
           <a href="#"><i className="fa fa-facebook"></i></a>
           <a href="#"><i className="fa fa-twitter"></i></a>
