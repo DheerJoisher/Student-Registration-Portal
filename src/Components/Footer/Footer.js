@@ -1,13 +1,14 @@
 import React from 'react';
 import './Footer.css';
 import { Link } from 'react-router-dom';
+
 function Footer() {
   return (
     <footer className="footer-container">
       <div className="footer-column">
       <h2 style={{ fontSize: '20px' }}><b>Contact Us</b></h2>
         <ul>
-          <li>FY IT</li>
+          <li><Link to="/Fyit">FY IT</Link></li>
           <li>231080012, 231080020</li>
           <li>231081039, 231081042</li>
           <li>231081074</li>
