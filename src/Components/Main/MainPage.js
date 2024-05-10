@@ -1,22 +1,79 @@
-import React from 'react';
-import './MainPage.css';
-import img from './img.png';
+import React, { useEffect, useState } from 'react';
+import './MainPage.css'; // Import your CSS file
+import logo from './logo.jpeg';
 import { Link } from 'react-router-dom';
-export default function MainPage() {
+
+function MainPage() {
+  const [heroActive, setHeroActive] = useState(false);
+
+  useEffect(() => {
+    let ticking = false;
+
+    const handleScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          const scrollPos = window.scrollY;
+
+          if (scrollPos > 200) {
+            if (!heroActive) {
+              setHeroActive(true);
+              document.getElementById('mainNav').style.backgroundColor = 'rgba(33, 37, 41, 1)';
+              if (window.innerWidth < 956) return;
+              document.getElementById('logoImg').classList.add('consize');
+            }
+          } else {
+            if (heroActive) {
+              setHeroActive(false);
+              document.getElementById('mainNav').style.backgroundColor = 'transparent';
+              if (window.innerWidth < 956) return;
+              document.getElementById('logoImg').classList.remove('consize');
+            }
+          }
+          ticking = false;
+        });
+        ticking = true;
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [heroActive]);
+
   return (
-    <div className="main-page-container">
-      <div className="main-content">
-        <div className="text-content">
-          <h2 >Welcome to Our University</h2>
-          <p>This is the text content section.<br/> You can add any information you want to display here.</p>
-          <div className="login-button">
-          <Link to="/login">Login</Link>
-          </div>
+    <div>
+      <nav className="navbar navbar-expand-lg navbar-dark p-3" id="mainNav">
+        <div className="container-fluid">
+          <a className="navbar-brand" href="#">
+            <img src={logo} alt="Divi Logo" id="logoImg" />
+          </a>
+            <ul>
+              <ul className="main-nav">
+              <li><Link to="/courses">Courses</Link></li>
+              <li><Link to="/professor">Professors</Link></li>
+              <li><Link to="/Announcements">Announcements</Link></li>
+              <li><Link to="/calendar">Calender</Link></li>
+              <li><Link to="/carousel">Carousel</Link></li>
+                <li>
+                  <div className="login-button">
+                    <a href='./SRP Login Page.html'>Login</a>
+                  </div>
+                </li>
+              </ul>
+            </ul>
         </div>
-        <div className="image-content">
-          <img src={img} alt="University Image"/>
-        </div>
+      </nav>
+
+      <div id="hero" className={heroActive ? 'active' : ''}>
+        <h1 className="display-3">
+          Welcome to Our University!!
+        </h1>
       </div>
+      <div className="vh-100"></div>
     </div>
   );
 }
+
+export default MainPage;

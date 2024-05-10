@@ -1,3 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Login Validation</title>
+<style>
+  @font-face {
+    font-family: GreatVibes;
+    src: url('/static_files/fonts/gv.ttf');
+  }
+  
+  .greatVibesFont {
+    font-family: GreatVibes;
+  }
   
   .navbar {
     transition: background-color 0.3s ease;
@@ -47,17 +62,16 @@
     padding-top: 0; /* Remove any top padding */
     margin-top: -100px; /* Adjust as needed to overlap with the navbar */
     z-index: 1; /* Ensure the hero section appears below the navbar */
+
 }
   
   
   .display-3 {
-    padding-top: 55vh;
+    padding-top: 45vh;
     padding-bottom: 85vh;
     text-align: center;
     text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.8);
     color: white;
-    font-size: 100px;
-    transition: text-shadow 0.3s ease;
   }
    ul {
   margin: 0;
@@ -129,3 +143,72 @@ a {
 .login-button:hover {
     transform: scale(1.1);
 }
+	
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark p-3" id="mainNav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./logo.jpeg" alt="Divi Logo" id="logoImg">
+          </a>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul> <!-- Add the "nav-tabs" class here -->
+                <ul class="main-nav">
+                    <li>Courses</li>
+                    <li>Professors</li>
+                    <li>Announcements</li>
+                    <li>Calender</li>
+                    <li>Carousel</li>
+                    <li><div class="login-button">
+                        <a href='./SRP Login Page.html'>Login</a>
+                        </div></li>
+                </ul>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+      <div id="hero">
+        <h1 class="display-3 greatVibesFont">
+          Adventure Unlimited. Explore the West
+        </h1>
+      </div>
+      <div class="vh-100"></div>
+    
+<script>
+var mainNav = document.getElementById('mainNav')
+var logoImg = document.getElementById('logoImg')
+var hero = document.getElementById('hero')
+var heroActive = false; // To enhance performance, I chose this global variable to track the navbar changes.
+var ticking = false;
+
+window.addEventListener('scroll', function() {
+  if (!ticking) {
+    window.requestAnimationFrame(function() {
+      var scrollPos = window.scrollY;
+
+      if (scrollPos > 200) {
+        if (!heroActive) {
+          heroActive = true;
+          mainNav.style.backgroundColor = 'rgba(33, 37, 41, 1)'; // Set navbar background to opaque black
+          if(window.innerWidth < 956) return;
+          logoImg.className = 'consize';
+        }
+      } else {
+        if (heroActive) {
+          heroActive = false;
+          mainNav.style.backgroundColor = 'transparent'; // Set navbar background back to transparent
+          if(window.innerWidth < 956) return;
+          logoImg.className = '';
+        }
+      }
+      ticking = false;
+    });
+
+    ticking = true;
+  }
+});
+</script>
+</body>
+</html>

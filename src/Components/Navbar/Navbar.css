@@ -25,30 +25,30 @@ a {
 
 
 
-.logo {
+.logo1 {
 	margin: 0;
 	font-size: 1.45em;
 }
 
-.main-nav {
+.main-nav1 {
 	margin-top: 5px;
 	color: #CAF0F8;
 
 }
-.logo a,
-.main-nav li {
+.logo1 a,
+.main-nav1 li {
 	padding: 10px 15px;
 	text-transform: uppercase;
 	text-align: center;
 	display: block;
 }
 
-.main-nav li {
+.main-nav1 li {
 	color: #CAF0F8;
 	font-size: 1em;
 }
 
-.main-nav li:hover {
+.main-nav1 li:hover {
 	color: #ed7014;
 }
 
@@ -69,7 +69,7 @@ a {
 
 @media (min-width: 769px) {
 	.header,
-	.main-nav {
+	.main-nav1 {
 		display: flex;
 	}
 	.header {
@@ -91,4 +91,3 @@ a {
 	}
 
 }
-
