@@ -6,7 +6,7 @@ import './Carousel.css';
 const slides = [
   {
     imageUrl:
-      "https://cdn.vox-cdn.com/thumbor/K3UUIhyF6hIqMFeOR47paUWLBPk=/0x0:3000x2000/1200x800/filters:focal(1260x760:1740x1240)/cdn.vox-cdn.com/uploads/chorus_image/image/64675796/shutterstock_85875151.0.jpg",
+      "https://www.canva.com/design/DAGExLc5wT4/Ii9k9u9OH2ixq8hTOTV56A/edit",
   },
   {
     imageUrl:
