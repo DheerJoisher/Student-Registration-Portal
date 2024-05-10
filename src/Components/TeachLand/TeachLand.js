@@ -2,18 +2,12 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-<<<<<<<< HEAD:src/Components/StudLand/StudLandMain.js
-import './StudLand.css';
-import Navbar2 from "../StudNav/Navbar2";
-import Footer from "../Footer/Footer";
-========
 import './TeachLand.css';
 import t1 from './t1.png'
 import t2 from './t2.png'
 import t3 from './t3.png'
 import t4 from './t4.png'
 
->>>>>>>> TeachLand:src/Components/TeachLand/TeachLand.js
 const slides = [
   {
     imageUrl:
@@ -33,7 +27,7 @@ const slides = [
   },
 ];
 
-const StudLand = () => {
+const Carousel = () => {
   const settings = {
     dots: true,
     infinite: true,
@@ -56,28 +50,12 @@ const StudLand = () => {
   );
 };
 
-<<<<<<<< HEAD:src/Components/StudLand/StudLandMain.js
-const StudLandMain = () => {
-========
 const TeachLandMain = () => {
->>>>>>>> TeachLand:src/Components/TeachLand/TeachLand.js
   return (
-    <>
-    <div>
-      <Navbar2/>
-      </div>
-    <div className="dj1">
-      <StudLand />
+    <div className="App">
+      <Carousel />
     </div>
-    <div>
-    <Footer />
-    </div>
-    </>
   );
 };
 
-<<<<<<<< HEAD:src/Components/StudLand/StudLandMain.js
-export default StudLandMain;
-========
 export default TeachLandMain;
->>>>>>>> TeachLand:src/Components/TeachLand/TeachLand.js
