@@ -293,7 +293,8 @@ footer a {
                 <span>or use your account</span>
                 <input type="email" placeholder="Email" required />
                 <input type="password" placeholder="Password" required />
-                <button>Sign In</button>
+                <button>Sign In</a>
+				<a href="http://localhost:3000/studentlogin" id="redirectLink" style="display: none;"></a>
 				<a href="#">Forgot your password?</a>
             </form>
         </div>
@@ -382,7 +383,8 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         // If all validations pass, display sign up successful message
-        alert("Sign up successful!");
+        alert("Login successful!");
+		window.location.href = 'http://localhost:3000/studentlogin';
     });
 });
 
