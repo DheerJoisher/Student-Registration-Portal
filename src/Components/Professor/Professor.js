@@ -1,8 +1,10 @@
 import React from 'react';
-
+import Navbar1 from './../../Components/Navbar/Navbar1';
+import Footer from './../../Components/Footer/Footer';
 export default function Professor() {
   return (
     <>
+    <Navbar1 />
       <h1 style={{color: '#03045E', textAlign: 'center',fontFamily:'Arial',fontSize:'50px'}}>Our Esteemed Faculty</h1>
       
       <div style={containerStyle}>
@@ -99,6 +101,7 @@ export default function Professor() {
 
         {/* Add more professors here */}
       </div>
+      <Footer/>
     </>
   );
 }

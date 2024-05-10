@@ -90,4 +90,25 @@ a {
 		justify-content: space-between;
 	}
 
+
+	.login-button {
+		border: 1px solid #FF4B2B;
+		color: #FFFFFF;
+		background-color: #FF4B2B;
+		font-size: 12px;
+		letter-spacing: 1px;
+		font-weight: bold;
+		padding: 6px 15px;
+		text-transform: uppercase;
+		border-radius: 20px;
+		transition: transform 80ms;
+		cursor: pointer;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		
+	}
+	.login-button:hover {
+		transform: scale(1.1);
+	}
 }

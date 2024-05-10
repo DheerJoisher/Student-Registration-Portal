@@ -13,12 +13,11 @@ import Professor from './Components/Professor/Professor';
 import MyCalendar from './Components/MyCalendar/MyCalendar';
 import Announcements1 from './Components/Announcements/Announcements1';
 import CarouselMain from './Components/Carousel/CarouselMain';
+import Fyit from './Components/Fyit/Fyit';
 
 function App() {
   return (
     <Router>
-      <div>
-        <Navbar1 />
         <div className="container">
           <Routes>
             <Route path="/courses" element={<Courses />} />
@@ -33,10 +32,9 @@ function App() {
             <Route path="/calendar" element={<MyCalendar />} />
             <Route path="/announcements" element={<Announcements1 />} />
             <Route path="/carousel" element={<CarouselMain />} />
+            <Route path="/Fyit" element={<Fyit />} />
           </Routes>
         </div>
-        <Footer />
-      </div>
     </Router>
   );
 }

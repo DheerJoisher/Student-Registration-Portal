@@ -1,15 +1,15 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import paanchi from './paanchi.jpg';
 import pratham from './pratham.jpg' ;
 import dheer from './dheer.jpg';
 import sahil from './sahil.jpg'
 import vaishvi from './vaishvi.jpeg'
-
+import Navbar1 from './../../Components/Navbar/Navbar1';
+import Footer from './../../Components/Footer/Footer';
 
 const ProfileCard = () => (
   <>
+  <Navbar1 />
   <div style={containerStyle}>
     <div style={profileStyle}>
       <img
@@ -20,7 +20,7 @@ const ProfileCard = () => (
       <h1 style={{ fontSize: '20px', fontWeight: 'bold' }}>Dheer Joisher</h1>
       <p style={pstyles}>
         <a href="https://github.com/dheerjoisher">
-          <FontAwesomeIcon icon={faGithub} /> GitHub Profile
+          GitHub Profile
         </a>
       </p>
     </div>
@@ -37,7 +37,7 @@ const ProfileCard = () => (
       <h1 style={{ fontSize: '20px', fontWeight: 'bold' }}> Paanchi Nahar </h1>
       <p style={pstyles}>
         <a href="https://github.com/PaanchiNahar">
-          <FontAwesomeIcon icon={faGithub} /> GitHub Profile
+          GitHub Profile
         </a>
       </p>
     </div>
@@ -54,7 +54,7 @@ const ProfileCard = () => (
       <h1 style={{ fontSize: '20px', fontWeight: 'bold' }}>Vaishvi Khandelwal</h1>
       <p style={pstyles}>
         <a href="https://github.com/vaishvi2811">
-          <FontAwesomeIcon icon={faGithub} /> GitHub Profile
+          GitHub Profile
         </a>
       </p>
     </div>
@@ -71,7 +71,7 @@ const ProfileCard = () => (
       <h1 style={{ fontSize: '20px', fontWeight: 'bold' }}>Pratham Bhamare</h1>
       <p style={pstyles}>
         <a href="https://github.com/PrathamBhamare">
-          <FontAwesomeIcon icon={faGithub} /> GitHub Profile
+          GitHub Profile
         </a>
       </p>
     </div>
@@ -88,12 +88,12 @@ const ProfileCard = () => (
       <h1 style={{ fontSize: '20px', fontWeight: 'bold' }}>Sahil Langhe</h1>
       <p style={pstyles}>
         <a href="https://github.com/dheerjoisher">
-          <FontAwesomeIcon icon={faGithub} /> GitHub Profile
+          GitHub Profile
         </a>
       </p>
     </div>
   </div>
-  
+  <Footer />
 
   </>
 

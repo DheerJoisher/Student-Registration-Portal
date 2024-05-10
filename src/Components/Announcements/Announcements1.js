@@ -1,6 +1,8 @@
 // AnnouncementList.js
 import React from 'react';
 import './AnnouncementList.css';
+import Navbar1 from './../../Components/Navbar/Navbar1';
+import Footer from './../../Components/Footer/Footer';
 
 let announcement=[
     {
@@ -18,7 +20,9 @@ let announcement=[
 ]
 const AnnouncementList = () => {
   return (
-    <div className="announcement-list">
+      <div>
+        <Navbar1 />
+      <div className="announcement-list">
       <h2>Announcements</h2>
       <ul>
         {announcement.map((announcement, index) => (
@@ -29,6 +33,8 @@ const AnnouncementList = () => {
         ))}
       </ul>
     </div>
+    <Footer />
+      </div>
   );
 }
 

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './MainPage.css'; // Import your CSS file
 import logo from './logo.jpeg';
 import { Link } from 'react-router-dom';
+import Footer from './../../Components/Footer/Footer';
 
 function MainPage() {
   const [heroActive, setHeroActive] = useState(false);
@@ -43,6 +44,7 @@ function MainPage() {
   }, [heroActive]);
 
   return (
+    <>
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark p-3" id="mainNav">
         <div className="container-fluid">
@@ -55,10 +57,9 @@ function MainPage() {
               <li><Link to="/professor">Professors</Link></li>
               <li><Link to="/Announcements">Announcements</Link></li>
               <li><Link to="/calendar">Calender</Link></li>
-              <li><Link to="/carousel">Carousel</Link></li>
                 <li>
                   <div className="login-button">
-                    <a href='./SRP Login Page.html'>Login</a>
+                    <a href='http://127.0.0.1:5500/src/SRP%20Login%20Page.html'>Login</a>
                   </div>
                 </li>
               </ul>
@@ -73,6 +74,8 @@ function MainPage() {
       </div>
       <div className="vh-100"></div>
     </div>
+    <Footer />
+    </>
   );
 }
 
