@@ -13,9 +13,11 @@ const slides = [
   {
     imageUrl:
       "https://i.insider.com/6340783eb3e94d0019781b4e?width=700",
+      "https://i.insider.com/6340783eb3e94d0019781b4e?width=700",
   },
   {
     imageUrl:
+      "https://images.ctfassets.net/hrltx12pl8hq/3Mz6t2p2yHYqZcIM0ic9E2/3b7037fe8871187415500fb9202608f7/Man-Stock-Photos.jpg",
       "https://images.ctfassets.net/hrltx12pl8hq/3Mz6t2p2yHYqZcIM0ic9E2/3b7037fe8871187415500fb9202608f7/Man-Stock-Photos.jpg",
   },
 ];
@@ -60,3 +62,6 @@ const StudLandMain = () => {
 };
 
 export default StudLandMain;
+========
+export default TeachLandMain;
+>>>>>>>> TeachLand:src/Components/TeachLand/TeachLand.js
