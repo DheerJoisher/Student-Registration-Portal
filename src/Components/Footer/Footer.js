@@ -6,13 +6,10 @@ function Footer() {
   return (
     <footer className="footer-container">
       <div className="footer-column">
-      <h2 style={{ fontSize: '20px' }}><b>About Us</b></h2>
-        <ul>
-          <li><Link to="/Fyit">FY IT</Link></li>
-          <li>231080012, 231080020</li>
-          <li>231081039, 231081042</li>
-          <li>231081074</li>
-        </ul>
+        <h2 style={{ fontSize: '20px', marginBottom: '5px' }}><b>About Us</b></h2>
+       <ul> <p>Our team, comprised of dedicated individuals with diverse skills, worked together to develop a Student Registration Portal, 
+        focusing on functionality and user satisfaction. </p></ul>
+
       </div>
       <div className="footer-column">
         <h2 style={{ fontSize: '20px' }}><b>Quick Links</b></h2>
@@ -25,6 +22,12 @@ function Footer() {
       </div>
       <div className="footer-column">
         <h2 style={{ fontSize: '20px' }}><b>Follow Us</b></h2>
+        <ul>
+          <li><Link to="/Fyit">FY IT</Link></li>
+          <li>231080012, 231080020</li>
+          <li>231081039, 231081042</li>
+          <li>231081074</li>
+        </ul>
         <div className="social-icons">
           <a href="#"><i className="fa fa-facebook"></i></a>
           <a href="#"><i className="fa fa-twitter"></i></a>
