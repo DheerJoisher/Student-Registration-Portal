@@ -2,7 +2,9 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import './Carousel.css';
+import './StudLand.css';
+import Navbar2 from "../StudNav/Navbar2";
+import Footer from "../Footer/Footer";
 const slides = [
   {
     imageUrl:
@@ -18,7 +20,7 @@ const slides = [
   },
 ];
 
-const Carousel = () => {
+const StudLand = () => {
   const settings = {
     dots: true,
     infinite: true,
@@ -41,12 +43,20 @@ const Carousel = () => {
   );
 };
 
-const CarouselMain = () => {
+const StudLandMain = () => {
   return (
-    <div className="App">
-      <Carousel />
+    <>
+    <div>
+      <Navbar2/>
+      </div>
+    <div className="dj1">
+      <StudLand />
     </div>
+    <div>
+    <Footer />
+    </div>
+    </>
   );
 };
 
-export default CarouselMain;
+export default StudLandMain;
