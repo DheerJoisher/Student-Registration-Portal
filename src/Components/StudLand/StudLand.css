@@ -1,35 +1,34 @@
 /* Carousel container */
 .dj1 {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  /* Slide image */
-  img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
- /* Slide content */
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Slide image */
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+/* Slide content */
 .carousel-content {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 20px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  /* Slide title */
-  h3 {
-    margin-top: auto; /* Push title to the top of the space */
-    margin-bottom: 10px;
-    overflow: hidden; /* Ensure title does not overflow */
-    white-space: nowrap; /* Prevent wrapping of title */
-    text-overflow: ellipsis; /* Show ellipsis for overflowed titles */
-  }
-  
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Slide title */
+h3 {
+  margin-top: auto; /* Push title to the top of the space */
+  margin-bottom: 10px;
+  overflow: hidden; /* Ensure title does not overflow */
+  white-space: nowrap; /* Prevent wrapping of title */
+  text-overflow: ellipsis; /* Show ellipsis for overflowed titles */
+}
