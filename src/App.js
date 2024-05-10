@@ -16,6 +16,7 @@ import StudLandMain from './Components/StudLand/StudLandMain';
 import Fyit from './Components/Fyit/Fyit';
 import Registration from './Components/Registration/Registration';
 import Studentinfo from './Components/Studentinfo/Studentinfo';
+import TeachLandMain from './Components/TeachLand/TeachLand';
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
             <Route path="/studentlogin/Registration" element={<Registration />} />
             <Route path="/studentlogin/announcements" element={<Studentinfo />} />
             <Route path="/studentlogin/calender" element={<Registration />} />
+            <Route path="/Teachlogin" element={<TeachLandMain />} />
           </Routes>
         </div>
     </Router>

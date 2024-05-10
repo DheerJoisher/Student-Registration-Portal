@@ -2,40 +2,34 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import './StudLand.css';
+import './TeachLand.css';
 import Navbar2 from "../StudNav/Navbar2";
 import Footer from "../Footer/Footer";
-import s1 from './s1.png'
-import s2 from './s2.png'
-import s3 from './s3.png'
-import s4 from './s4.png'
-import s5 from './s5.png'
-
+import t1 from './t1.png'
+import t2 from './t2.png'
+import t3 from './t3.png'
+import t4 from './t4.png'
 
 const slides = [
   {
     imageUrl:
-     s1
+      t1,
   },
   {
     imageUrl:
-     s2
+      t2,
   },
   {
     imageUrl:
-      s3
+      t3,
   },
   {
     imageUrl:
-      s4
-  },
-  {
-    imageUrl:
-      s5
+      t4,
   },
 ];
 
-const StudLand = () => {
+const Carousel = () => {
   const settings = {
     dots: true,
     infinite: true,
@@ -58,14 +52,14 @@ const StudLand = () => {
   );
 };
 
-const StudLandMain = () => {
+const TeachLandMain = () => {
   return (
     <>
     <div>
       <Navbar2/>
       </div>
-    <div className="dj1">
-      <StudLand />
+    <div className="App">
+      <Carousel />
     </div>
     <div>
     <Footer />
@@ -74,4 +68,4 @@ const StudLandMain = () => {
   );
 };
 
-export default StudLandMain;
+export default TeachLandMain;
