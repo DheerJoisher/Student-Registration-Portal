@@ -2,34 +2,21 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-<<<<<<<< HEAD:src/Components/StudLand/StudLandMain.js
 import './StudLand.css';
 import Navbar2 from "../StudNav/Navbar2";
 import Footer from "../Footer/Footer";
-========
-import './TeachLand.css';
-import t1 from './t1.png'
-import t2 from './t2.png'
-import t3 from './t3.png'
-import t4 from './t4.png'
-
->>>>>>>> TeachLand:src/Components/TeachLand/TeachLand.js
 const slides = [
   {
     imageUrl:
-      t1,
+      "https://cdn.vox-cdn.com/thumbor/K3UUIhyF6hIqMFeOR47paUWLBPk=/0x0:3000x2000/1200x800/filters:focal(1260x760:1740x1240)/cdn.vox-cdn.com/uploads/chorus_image/image/64675796/shutterstock_85875151.0.jpg",
   },
   {
     imageUrl:
-      t2,
+      "https://i.insider.com/6340783eb3e94d0019781b4e?width=700",
   },
   {
     imageUrl:
-      t3,
-  },
-  {
-    imageUrl:
-      t4,
+      "https://images.ctfassets.net/hrltx12pl8hq/3Mz6t2p2yHYqZcIM0ic9E2/3b7037fe8871187415500fb9202608f7/Man-Stock-Photos.jpg",
   },
 ];
 
@@ -56,11 +43,7 @@ const StudLand = () => {
   );
 };
 
-<<<<<<<< HEAD:src/Components/StudLand/StudLandMain.js
 const StudLandMain = () => {
-========
-const TeachLandMain = () => {
->>>>>>>> TeachLand:src/Components/TeachLand/TeachLand.js
   return (
     <>
     <div>
@@ -76,8 +59,4 @@ const TeachLandMain = () => {
   );
 };
 
-<<<<<<<< HEAD:src/Components/StudLand/StudLandMain.js
 export default StudLandMain;
-========
-export default TeachLandMain;
->>>>>>>> TeachLand:src/Components/TeachLand/TeachLand.js

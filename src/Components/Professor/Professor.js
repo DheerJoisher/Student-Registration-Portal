@@ -12,7 +12,7 @@ export default function Professor() {
         <div style={profileStyle}>
           <img src="https://media.istockphoto.com/id/1292136923/photo/young-female-student-or-teacher-with-books.jpg?s=612x612&w=0&k=20&c=AOoctmnT1nqXydR_TRmJrXUxK2OdrkfAweoJG2G17dY=" alt=" Priya Patel" style={imageStyle} />
           <h2 style={{ color: '#03045E', fontSize: '30px' }}>Mrs. Priya Patel</h2>
-          <p style={pstyles}>Associate Professor of Statistics and Mathematics</p>
+          <p style={pstyles}>Associate Professor of Statistics and Mathematics and Statistics</p>
           <p style={pstyles}>Department of Mathematics, College of Engineering </p>
           <p style={pstyles}><a href="mailto:erodriguez@university.edu" style={linkStyle}>PriyaPatel@university.edu</a></p>
           <p style={pstyles}><a href="https://www.emilyrodriguezresearch.com" target="_blank" rel="noopener noreferrer" style={linkStyle}>www.PriyaPateresearch.com</a></p>
