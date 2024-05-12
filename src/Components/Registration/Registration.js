@@ -1,7 +1,10 @@
 import React from 'react';
-
+import Footer from './../../Components/Footer/Footer';
+import Navbar2 from '../StudNav/Navbar2';
 export default function Registration() {
   return (
+    <>
+    <Navbar2 />
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', backgroundColor: '#f2f2f2', fontFamily: 'Arial, sans-serif' }}>
       <div style={{ width: '80%', maxWidth: '800px', padding: '20px' }}>
         <div style={{ backgroundColor: '#fff', border: '1px solid #ccc', borderRadius: '5px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)', padding: '20px', marginTop: '20px' }}>
@@ -80,6 +83,8 @@ export default function Registration() {
         </div>
       </div>
     </div>
+    <Footer />
+    </>
   );
 }
 

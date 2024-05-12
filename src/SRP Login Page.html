@@ -20,7 +20,7 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	height: 100vh;
 	margin: -20px 0 50px;
-	background-image: url("src/BackgroundBlur.jpeg");
+	background-image: url("./BackgroundBlur.jpeg");
 }
 
 h1 {
@@ -270,32 +270,18 @@ footer a {
         <div class="form-container sign-up-container">
             <form action="#">
                 <h1>Professor Login</h1>
-                <div class="social-container">
-                    <a href="https://accounts.google.com/v3/signin/identifier?ifkv=ATuJsjym9j0kAoMlyZBr7pDGATj7LzVSMzGalSkplH2TTrCbT7ekW1EfW_EgL56QQgTjvIZ_TkrX&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S218810057%3A1709388554164970&theme=glif" class="social"><img id="socialimg" src="https://discussion.enpass.io/uploads/monthly_2020_09/2144359770_GoogleLogo.png.02c21d03c8c849295940946577a30dac.png"></a>
-                    <a href="https://www.facebook.com/login/" class="social"><img id="socialimg" src="https://i.pinimg.com/736x/95/58/99/9558995b1565b1bf25c74891572daa14.jpg"></a>
-					<a href="https://www.linkedin.com/login" class="social"><img id="socialimg" src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png"></a>
-                </div>
-                <span>or use your account</span>
                 <input type="email" placeholder="Email" />
                 <input type="password" placeholder="Password" />
-                <button>Sign In</button>
-				<a href="#">Forgot your password?</a>
+                <a href="http://localhost:3000/Teacherlogin"><button>Sign In</button></a>
             </form>
         </div>
         <div class="form-container sign-in-container">
             <form action="#">
                 <h1>Student Login</h1>
-                <div class="social-container">
-					<a href="https://accounts.google.com/v3/signin/identifier?ifkv=ATuJsjym9j0kAoMlyZBr7pDGATj7LzVSMzGalSkplH2TTrCbT7ekW1EfW_EgL56QQgTjvIZ_TkrX&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S218810057%3A1709388554164970&theme=glif" class="social"><img id="socialimg" src="https://discussion.enpass.io/uploads/monthly_2020_09/2144359770_GoogleLogo.png.02c21d03c8c849295940946577a30dac.png"></a>
-                    <a href="https://www.facebook.com/login/" class="social"><img id="socialimg" src="https://i.pinimg.com/736x/95/58/99/9558995b1565b1bf25c74891572daa14.jpg"></a>
-					<a href="https://www.linkedin.com/login" class="social"><img id="socialimg" src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png"></a>
-                </div>
-                <span>or use your account</span>
                 <input type="email" placeholder="Email" required />
                 <input type="password" placeholder="Password" required />
                 <button>Sign In</a>
 				<a href="http://localhost:3000/studentlogin" id="redirectLink" style="display: none;"></a>
-				<a href="#">Forgot your password?</a>
             </form>
         </div>
         <div class="overlay-container">

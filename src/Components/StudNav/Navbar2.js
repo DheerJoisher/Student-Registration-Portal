@@ -5,14 +5,14 @@ import logo from './logo.jpeg';
 const Navbar2 = () => {
   return (
 <header class="header">
-<a href="http://localhost:3000/"><img src={logo} style={{ maxWidth: '240px' }}></img></a>
+<Link to="/studentlogin"><img src={logo} style={{ maxWidth: '240px' }}></img></Link>
       <ul class="main-nav1">
           <li><Link to="/studentlogin/info">Info</Link></li>
           <li><Link to="/studentlogin/registration">Registration</Link></li>
           <li><Link to="/studentlogin/Announcements">Announcements</Link></li>
-          <li><Link to="/studentlogin/calendar">Calender</Link></li>
+          <li><Link to="/studentlogin/calendar">Calendar</Link></li>
           <div className="login-button">
-                    <a href='http://localhost:3000/'>Logout</a>
+                <Link to="/">Logout</Link>
                   </div>
       </ul>
 	</header> 

@@ -1,8 +1,12 @@
 import React from 'react'
-
+import Navbar2 from './../../Components/StudNav/Navbar2';
+import Footer from './../../Components/Footer/Footer';
 export default function Studentinfo() {
   return (
     <>
+    <div>
+    <Navbar2 />
+    </div>
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', backgroundColor: '#f2f2f2', fontFamily: 'Arial, sans-serif' }}>
       <div style={{ width: '80%', maxWidth: '800px', padding: '20px' }}>
         <div style={{ backgroundColor: '#fff', border: '1px solid #ccc', borderRadius: '5px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)', padding: '20px', marginTop: '20px' }}>
@@ -57,6 +61,9 @@ export default function Studentinfo() {
           </form>
         </div>
       </div>
+    </div>
+    <div>
+    <Footer />
     </div>
     </>
   );

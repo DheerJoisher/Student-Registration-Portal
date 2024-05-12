@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 function SignUpForm() {
   const [state, setState] = React.useState({
     name: "",
@@ -49,7 +50,7 @@ function SignUpForm() {
           placeholder="Password"
           required
         />
-        <button>Sign In</button>
+        <Link to="/Teachlogin"><button>Sign In</button></Link>
         <a href="#">Forgot your password?</a>
       </form>
     </div>

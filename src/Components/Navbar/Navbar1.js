@@ -5,14 +5,14 @@ import logo from './logo.jpeg';
 const Navbar1 = () => {
   return (
 <header class="header">
-<a href="http://localhost:3000/"><img src={logo} style={{ maxWidth: '240px' }}></img></a>
+<Link to="/"><img src={logo} style={{ maxWidth: '240px' }}></img></Link>
       <ul class="main-nav1">
           <li><Link to="/courses">Courses</Link></li>
           <li><Link to="/professor">Professors</Link></li>
           <li><Link to="/Announcements">Announcements</Link></li>
           <li><Link to="/calendar">Calender</Link></li>
           <div className="login-button">
-                    <a href='http://127.0.0.1:5500/src/SRP%20Login%20Page.html'>Login</a>
+                   <Link to="/logn">Login</Link>
                   </div>
       </ul>
 	</header> 

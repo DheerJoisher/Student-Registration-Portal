@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 function SignInForm() {
   const [state, setState] = React.useState({
     email: "",
@@ -46,7 +47,7 @@ function SignInForm() {
           onChange={handleChange}
           required
         />
-         <button>Sign In</button>
+         <Link to="/studentlogin"><button>Sign In</button></Link>
          <a href="#">Forgot your password?</a>
       </form>
     </div>

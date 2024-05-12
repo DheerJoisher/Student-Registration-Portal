@@ -29,7 +29,6 @@ function App() {
               If you have a page where you don't want Navbar and Footer, 
               don't include them in the Routes component.
             */}
-            <Route path="/special-page" element={<SpecialPageContent />} />
             <Route path="/" element={<MainPage />} />
             <Route path="/professor" element={<Professor />} />
             <Route path="/calendar" element={<MyCalendar />} />
@@ -38,23 +37,18 @@ function App() {
             <Route path="/Fyit" element={<Fyit />} />
             <Route path="/studentlogin/Info" element={<Studentinfo />} />
             <Route path="/studentlogin/Registration" element={<Registration />} />
-            <Route path="/studentlogin/announcements" element={<Studentinfo />} />
-            <Route path="/studentlogin/calender" element={<Registration />} />
+            <Route path="/studentlogin/announcements" element={<Announcements1 />} />
+            <Route path="/studentlogin/calendar" element={<MyCalendar />} />
             <Route path="/Teachlogin" element={<TeachLandMain />} />
+            <Route path="/Teachlogin/Info" element={<Studentinfo />} />
+            <Route path="/Teachlogin/Registration" element={<Registration />} />
+            <Route path="/Teachlogin/announcements" element={<Studentinfo />} />
+            <Route path="/Teachlogin/calender" element={<Registration />} />
           </Routes>
         </div>
     </Router>
   );
 }
 
-// SpecialPageContent component without Navbar and Footer
-function SpecialPageContent() {
-  return (
-    <>
-      <h1>This is a special page without Navbar and Footer</h1>
-      <p>This is the content of the special page.</p>
-    </>
-  );
-}
 
 export default App;

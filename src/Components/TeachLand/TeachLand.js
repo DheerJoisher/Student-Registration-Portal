@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './TeachLand.css';
-import Navbar2 from "../StudNav/Navbar2";
+import Navbar3 from "../TeachNav/Navbar3";
 import Footer from "../Footer/Footer";
 import t1 from './t1.png'
 import t2 from './t2.png'
@@ -56,9 +56,9 @@ const TeachLandMain = () => {
   return (
     <>
     <div>
-      <Navbar2/>
+      <Navbar3/>
       </div>
-    <div className="App">
+    <div className="dj1">
       <Carousel />
     </div>
     <div>

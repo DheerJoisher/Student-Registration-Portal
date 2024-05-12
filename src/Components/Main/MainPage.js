@@ -59,7 +59,9 @@ function MainPage() {
               <li><Link to="/calendar">Calender</Link></li>
                 <li>
                   <div className="login-button">
-                    <a href='http://127.0.0.1:5500/src/SRP%20Login%20Page.html'>Login</a>
+                    <div>
+                      <Link to="/login">Login</Link>
+                    </div>
                   </div>
                 </li>
               </ul>

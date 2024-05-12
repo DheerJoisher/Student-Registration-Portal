@@ -41,7 +41,7 @@ export default function Login() {
                 id="signUp"
                 onClick={() => handleOnClick("signUp")}
               >
-                Sign Up
+                Sign In
               </button>
             </div>
           </div>
