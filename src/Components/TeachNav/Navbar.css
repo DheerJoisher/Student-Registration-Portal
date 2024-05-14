@@ -12,19 +12,12 @@ ul {
   padding: 0;
   list-style: none;
 }
-
 a {
 	color: #CAF0F8;
     font-size: 1em;
-
-}
-
-a {
 	text-decoration: none;
+
 }
-
-
-
 .logo1 {
 	margin: 0;
 	font-size: 1.45em;
@@ -42,17 +35,16 @@ a {
 	text-align: center;
 	display: block;
 }
-
+.navbar-teach{
+	color:white;
+}
 .main-nav1 li {
 	color: #CAF0F8;
 	font-size: 1em;
 }
-
 .main-nav1 li:hover {
 	color: #ed7014;
 }
-
-
 .header {
 	padding-top: .5em;
 	padding-bottom: .5em;
@@ -65,8 +57,6 @@ a {
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 }
-
-
 @media (min-width: 769px) {
 	.header,
 	.main-nav1 {
@@ -81,16 +71,12 @@ a {
 		max-width: 1150px;
 	}
 	}
-
 }
-
 @media (min-width: 1025px) {
 	.header {
 		flex-direction: row;
 		justify-content: space-between;
 	}
-
-
 	.login-button {
 		border: 1px solid #FF4B2B;
 		color: #FFFFFF;
@@ -106,7 +92,6 @@ a {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		
 	}
 	.login-button:hover {
 		transform: scale(1.1);

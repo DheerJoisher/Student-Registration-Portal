@@ -7,11 +7,11 @@ const Navbar3 = () => {
 <header class="header">
 <Link to="/Teachlogin"><img src={logo} style={{ maxWidth: '240px' }}></img></Link>
       <ul class="main-nav1">
-          <li><Link to="/Teachlogin/info">Info</Link></li>
-          <li><Link to="/Teachlogin/Announcements">Announcements</Link></li>
-          <li><Link to="/Teachlogin/calendar">Calender</Link></li>
+          <li><Link className='navbar-teach' to="/Teachlogin/info">Info</Link></li>
+          <li><Link className='navbar-teach' to="/Teachlogin/Announcements">Announcements</Link></li>
+          <li><Link className='navbar-teach' to="/Teachlogin/calendar">Calender</Link></li>
           <div className="login-button">
-                  <Link to="/">Logout</Link>
+                  <Link className='navbar-teach' to="/">Logout</Link>
                   </div>
       </ul>
 	</header> 

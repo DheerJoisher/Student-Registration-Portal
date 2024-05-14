@@ -7,19 +7,16 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
-
 .footer-column {
   flex: 1;
   padding: 0 20px;
   margin-bottom: 20px;
 }
-
 ul {
   color:#CAF0F8;
   list-style: none;
   padding: 0;
 }
-
 ul li {
   margin-bottom: 5px;
 }
@@ -27,6 +24,9 @@ ul li {
 .social-icons a {
   margin-right: 10px;
   color: #CAF0F8;
+}
+.footer{
+  color: teal;
 }
 
 .social-icons a:hover {

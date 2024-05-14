@@ -53,14 +53,14 @@ function MainPage() {
           </a>
             <ul>
               <ul className="main-nav">
-              <li><Link to="/courses">Courses</Link></li>
-              <li><Link to="/professor">Professors</Link></li>
-              <li><Link to="/Announcements">Announcements</Link></li>
-              <li><Link to="/calendar">Calender</Link></li>
+              <li><Link className='main-nab' to="/courses">Courses</Link></li>
+              <li><Link className='main-nab' to="/professor">Professors</Link></li>
+              <li><Link className='main-nab' to="/Announcements">Announcements</Link></li>
+              <li><Link className='main-nab' to="/calendar">Calender</Link></li>
                 <li>
                   <div className="login-button">
                     <div>
-                      <Link to="/login">Login</Link>
+                      <Link className='main-nab' to="/login">Login</Link>
                     </div>
                   </div>
                 </li>

@@ -1,55 +1,49 @@
-  
   .navbar {
     transition: background-color 0.3s ease;
     position: sticky;
     top: 0;
     width: 100%;
     z-index: 1000;
-    background-color: transparent; /* Start with transparent background */
-    margin: 0; /* Remove the default margin */
+    background-color: transparent; 
+    margin: 0; 
     padding-top: .5em;
-	padding-bottom: .5em;
-	border-radius: 10px;
-    z-index: 1; /* Ensure the navbar appears on top of the hero section */
+	  padding-bottom: .5em;
+	  border-radius: 10px;
+    z-index: 1; 
   }
-
+  .main-nab{
+    color:white;
+  }
   .navbar-brand img {
     width: 100%;
     max-width: 640px;
     position: absolute;
     transition: all 300ms linear;
-    transform-origin: 0% 0%;
-    
+    transform-origin: 0% 0%; 
   }
   .navbar-brand img.consize {
-    max-width: 240px; /* Adjust the max-width as needed */
-    top: 50%; /* Align the top of the logo to the vertical center */
-    transform: translateY(-50%); /* Move the logo up by half of its height */
+    max-width: 240px; 
+    top: 50%; 
+    transform: translateY(-50%); 
 }
-  
   @media screen and (max-width: 956px) {
     .navbar-brand img {
       width: 100%;
       max-width: 240px;
-      position: relative;
-      
+      position: relative; 
     }
-  }
-  
+  }  
   img.consize {
     transform: translateY(-20px) scale(0.25);
   }
-  
   #hero {
     background: url('./background.jpeg') no-repeat;
     background-size: cover;
     background-position: top center;
-    padding-top: 0; /* Remove any top padding */
-    margin-top: -100px; /* Adjust as needed to overlap with the navbar */
-    z-index: 1; /* Ensure the hero section appears below the navbar */
+    padding-top: 0; 
+    margin-top: -100px; 
+    z-index: 1; 
 }
-  
-  
   .display-3 {
     padding-top: 55vh;
     padding-bottom: 85vh;
@@ -64,28 +58,20 @@
   padding: 0;
   list-style: none;
 }
-
 a {
 	color: #CAF0F8;
-    font-size: 1em;
-
+  font-size: 1em;
+  text-decoration: none;
 }
-
-a {
-	text-decoration: none;
-}
-
 .logo {
 	margin: 0;
 	font-size: 1.45em;
 }
-
 .main-nav {
 	margin-top: 5px;
 	color: #CAF0F8;
-  text-align: right; /* Align the tab elements to the right */
+  text-align: right; 
 }
-
 .logo a,
 .main-nav li {
 	padding: 10px 15px;
@@ -93,20 +79,17 @@ a {
 	text-align: center;
 	display: block;
 }
-
 .main-nav li {
 	color: #CAF0F8;
 	font-size: 1em;
 }
-
 .main-nav li:hover {
 	color: #ed7014;
 }
-
 @media (min-width: 769px) {
 	.main-nav {
 		display: flex;
-        justify-content: flex-end; /* Align items to the right */
+    justify-content: flex-end;
 }
 	}
     .login-button {
@@ -123,8 +106,7 @@ a {
     cursor: pointer;
     display: flex;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center;    
 }
 .login-button:hover {
     transform: scale(1.1);

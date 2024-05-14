@@ -14,10 +14,10 @@ function Footer() {
       <div className="footer-column">
         <h2 style={{ fontSize: '20px' }}><b>Quick Links</b></h2>
         <ul>
-          <li><Link to="/courses">Courses</Link></li>
-          <li><Link to="/professor">Professors</Link></li>
-          <li><Link to="/Announcements">Announcements</Link></li>
-          <li><Link to="/calendar">Calender</Link></li>
+          <li><Link className='footer' to="/courses">Courses</Link></li>
+          <li><Link className='footer' to="/professor">Professors</Link></li>
+          <li><Link className='footer' to="/Announcements">Announcements</Link></li>
+          <li><Link className='footer' to="/calendar">Calender</Link></li>
         </ul>
       </div>
       <div className="footer-column">
