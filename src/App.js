@@ -17,7 +17,7 @@ import Fyit from './Components/Fyit/Fyit';
 import Registration from './Components/Registration/Registration';
 import Studentinfo from './Components/Studentinfo/Studentinfo';
 import TeachLandMain from './Components/TeachLand/TeachLand';
-
+import ForgotPassword from './Components/ForgotPassword/ForgotPassword'
 function App() {
   return (
     <Router>
@@ -44,6 +44,7 @@ function App() {
             <Route path="/Teachlogin/Registration" element={<Registration />} />
             <Route path="/Teachlogin/announcements" element={<Studentinfo />} />
             <Route path="/Teachlogin/calender" element={<Registration />} />
+            <Route path="/error200" element={<ForgotPassword />} />
           </Routes>
         </div>
     </Router>
