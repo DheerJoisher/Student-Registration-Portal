@@ -4,6 +4,7 @@ import './AnnouncementList.css';
 import Navbar1 from './../../Components/Navbar/Navbar1';
 import Footer from './../../Components/Footer/Footer';
 
+
 let announcement=[
     {
         title:"End Semester Exams",

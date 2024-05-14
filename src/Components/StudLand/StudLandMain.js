@@ -11,7 +11,6 @@ import s3 from './s3.png'
 import s4 from './s4.png'
 import s5 from './s5.png'
 
-
 const slides = [
   {
     imageUrl:
