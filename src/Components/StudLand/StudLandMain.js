@@ -12,26 +12,11 @@ import s4 from './s4.png'
 import s5 from './s5.png'
 
 const slides = [
-  {
-    imageUrl:
-     s1
-  },
-  {
-    imageUrl:
-     s2
-  },
-  {
-    imageUrl:
-      s3
-  },
-  {
-    imageUrl:
-      s4
-  },
-  {
-    imageUrl:
-      s5
-  },
+  { imageUrl: s1 },
+  { imageUrl: s2 },
+  { imageUrl: s3 },
+  { imageUrl: s4 },
+  { imageUrl: s5 },
 ];
 
 const StudLand = () => {
@@ -51,7 +36,7 @@ const StudLand = () => {
       {slides.map((slide, index) => (
         <div key={index}>
           <img src={slide.imageUrl} alt={slide.title} />
-          </div>
+        </div>
       ))}
     </Slider>
   );
@@ -60,15 +45,13 @@ const StudLand = () => {
 const StudLandMain = () => {
   return (
     <>
-    <div>
-      <Navbar2/>
+      <Navbar2 />
+      <div className="page-container">
+        <div className="dj1">
+          <StudLand />
+        </div>
       </div>
-    <div className="dj1">
-      <StudLand />
-    </div>
-    <div>
-    <Footer />
-    </div>
+      <Footer />
     </>
   );
 };

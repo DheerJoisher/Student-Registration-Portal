@@ -11,22 +11,10 @@ import t3 from './t3.png'
 import t4 from './t4.png'
 
 const slides = [
-  {
-    imageUrl:
-      t1,
-  },
-  {
-    imageUrl:
-      t2,
-  },
-  {
-    imageUrl:
-      t3,
-  },
-  {
-    imageUrl:
-      t4,
-  },
+  { imageUrl: t1 },
+  { imageUrl: t2 },
+  { imageUrl: t3 },
+  { imageUrl: t4 },
 ];
 
 const Carousel = () => {
@@ -46,7 +34,7 @@ const Carousel = () => {
       {slides.map((slide, index) => (
         <div key={index}>
           <img src={slide.imageUrl} alt={slide.title} />
-          </div>
+        </div>
       ))}
     </Slider>
   );
@@ -55,15 +43,13 @@ const Carousel = () => {
 const TeachLandMain = () => {
   return (
     <>
-    <div>
-      <Navbar3/>
+      <div className="background-container">
+        <Navbar3 />
+        <div className="dj1">
+          <Carousel />
+        </div>
+        <Footer />
       </div>
-    <div className="dj1">
-      <Carousel />
-    </div>
-    <div>
-    <Footer />
-    </div>
     </>
   );
 };

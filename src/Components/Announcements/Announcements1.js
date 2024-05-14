@@ -1,9 +1,7 @@
-// AnnouncementList.js
 import React from 'react';
 import './AnnouncementList.css';
 import Navbar1 from './../../Components/Navbar/Navbar1';
 import Footer from './../../Components/Footer/Footer';
-
 
 let announcement=[
     {
@@ -19,22 +17,23 @@ let announcement=[
         detail:"Practical Examinations will be conducted from 11th May - 15th May."
     }
 ]
+
 const AnnouncementList = () => {
   return (
-      <div>
+      <div className="announcement-page">
         <Navbar1 />
-      <div className="announcement-list">
-      <h2>Announcements</h2>
-      <ul>
-        {announcement.map((announcement, index) => (
-          <li key={index}>
-            <h3>{announcement.title}</h3>
-            <p>{announcement.details}</p>
-          </li>
-        ))}
-      </ul>
-    </div>
-    <Footer />
+        <div className="announcement-list">
+          <h2 style={{ fontFamily: 'DM Sans', fontWeight: 'bold' }}>Announcements</h2>
+          <ul>
+            {announcement.map((announcement, index) => (
+              <li key={index}>
+                <h3>{announcement.title}</h3>
+                <p>{announcement.details}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <Footer />
       </div>
   );
 }
