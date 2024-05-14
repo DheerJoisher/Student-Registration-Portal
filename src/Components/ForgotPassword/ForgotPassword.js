@@ -8,10 +8,10 @@ export default function MainPage() {
     <div style={{ height: '100vh', paddingBottom: '50px', paddingTop: '50px', backgroundColor: '#c9c9c9', fontFamily: 'Arial, sans-serif' }}>
       <div className={styles.mainContent}>
         <div className={styles.textContent} style={{ paddingTop: '100px' }}>
-          <h2 style={{ fontSize: '40px' }}>
+          <h2 style={{color: 'black', fontSize: '40px' }}>
             Error 200!!<br /> Forgot Password
           </h2>
-          <p style={{ fontSize: '25px' }} className='my-3'>
+          <p style={{color: 'black', fontSize: '25px' }} className='my-3'>
             Please Contact the <br />Administrative Department
           </p>
           <div>

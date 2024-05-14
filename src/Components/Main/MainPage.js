@@ -60,7 +60,7 @@ function MainPage() {
                 <li>
                   <div className="login-button">
                     <div>
-                      <Link className='main-nab' to="/login">Login</Link>
+                      <Link to="/login">Login</Link>
                     </div>
                   </div>
                 </li>

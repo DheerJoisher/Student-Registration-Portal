@@ -1,35 +1,42 @@
-.Login {
+/* Scoped styles */
+.Login_container {
   font-family: sans-serif;
   text-align: center;
 }
 
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
 
-* {
+.Login_container * {
   box-sizing: border-box;
 }
 
-body {
-  background: #f6f5f7;
+.Login_mainContainer {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  position: relative;
+  overflow: hidden;
+  width: 768px;
+  max-width: 100%;
+  min-height: 480px;
+
+  /* Center the container */
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  font-family: "Montserrat", sans-serif;
-  height: 100vh;
-  margin: -20px 0 50px;
 }
 
-h1 {
+.Login_h1 {
   font-weight: bold;
   margin: 0;
+  font-size: 20px;
 }
 
-h2 {
+.Login_h2 {
   text-align: center;
 }
 
-p {
+.Login_p {
   font-size: 14px;
   font-weight: 100;
   line-height: 20px;
@@ -37,18 +44,18 @@ p {
   margin: 20px 0 30px;
 }
 
-span {
+.Login_span {
   font-size: 12px;
 }
 
-a {
+.Login_a {
   color: #333;
   font-size: 14px;
   text-decoration: none;
   margin: 15px 0;
 }
 
-button {
+.Login_button {
   border-radius: 20px;
   border: 1px solid #ff4b2b;
   background-color: #ff4b2b;
@@ -61,20 +68,20 @@ button {
   transition: transform 80ms ease-in;
 }
 
-button:active {
+.Login_button:active {
   transform: scale(0.95);
 }
 
-button:focus {
+.Login_button:focus {
   outline: none;
 }
 
-button.ghost {
+.Login_button.ghost {
   background-color: transparent;
   border-color: #ffffff;
 }
 
-form {
+.Login_form {
   background-color: #ffffff;
   display: flex;
   align-items: center;
@@ -85,7 +92,7 @@ form {
   text-align: center;
 }
 
-input {
+.Login_input {
   background-color: #eee;
   border: none;
   padding: 12px 15px;
@@ -93,7 +100,7 @@ input {
   width: 100%;
 }
 
-.container {
+.Login_mainContainer {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
@@ -104,38 +111,38 @@ input {
   min-height: 480px;
 }
 
-.form-container {
+.Login_formContainer {
   position: absolute;
   top: 0;
   height: 100%;
   transition: all 0.6s ease-in-out;
 }
 
-.sign-in-container {
+.Login_signInContainer {
   left: 0;
   width: 50%;
   z-index: 2;
 }
 
-.container.right-panel-active .sign-in-container {
+.Login_containerRightPanelActive .Login_signInContainer {
   transform: translateX(100%);
 }
 
-.sign-up-container {
+.Login_signUpContainer {
   left: 0;
   width: 50%;
   opacity: 0;
   z-index: 1;
 }
 
-.container.right-panel-active .sign-up-container {
+.Login_containerRightPanelActive .Login_signUpContainer {
   transform: translateX(100%);
   opacity: 1;
   z-index: 5;
-  animation: show 0.6s;
+  animation: Login_show 0.6s;
 }
 
-@keyframes show {
+@keyframes Login_show {
   0%,
   49.99% {
     opacity: 0;
@@ -149,7 +156,7 @@ input {
   }
 }
 
-.overlay-container {
+.Login_overlayContainer {
   position: absolute;
   top: 0;
   left: 50%;
@@ -160,11 +167,11 @@ input {
   z-index: 100;
 }
 
-.container.right-panel-active .overlay-container {
+.Login_containerRightPanelActive .Login_overlayContainer {
   transform: translateX(-100%);
 }
 
-.overlay {
+.Login_overlay {
   background: #ff416c;
   background: -webkit-linear-gradient(to right, #ff4b2b, #ff416c);
   background: linear-gradient(to right, #ff4b2b, #ff416c);
@@ -180,11 +187,11 @@ input {
   transition: transform 0.6s ease-in-out;
 }
 
-.container.right-panel-active .overlay {
+.Login_containerRightPanelActive .Login_overlay {
   transform: translateX(50%);
 }
 
-.overlay-panel {
+.Login_overlayPanel {
   position: absolute;
   display: flex;
   align-items: center;
@@ -199,28 +206,28 @@ input {
   transition: transform 0.6s ease-in-out;
 }
 
-.overlay-left {
+.Login_overlayLeft {
   transform: translateX(-20%);
 }
 
-.container.right-panel-active .overlay-left {
+.Login_containerRightPanelActive .Login_overlayLeft {
   transform: translateX(0);
 }
 
-.overlay-right {
+.Login_overlayRight {
   right: 0;
   transform: translateX(0);
 }
 
-.container.right-panel-active .overlay-right {
+.Login_containerRightPanelActive .Login_overlayRight {
   transform: translateX(20%);
 }
 
-.social-container {
+.Login_socialContainer {
   margin: 20px 0;
 }
 
-.social-container a {
+.Login_socialContainer a {
   border: 1px solid #dddddd;
   border-radius: 50%;
   display: inline-flex;
@@ -230,4 +237,3 @@ input {
   height: 40px;
   width: 40px;
 }
-

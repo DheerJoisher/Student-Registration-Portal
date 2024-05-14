@@ -5,7 +5,7 @@ import {
   Route
 } from "react-router-dom";
 import MainPage from './Components/Main/MainPage';
-// import Login from './Components/Login/Login';
+import Login from './Components/Login/Login';
 // import Navbar1 from './Components/Navbar/Navbar1';
 // import Footer from './Components/Footer/Footer';
 import Courses from './Components/Courses/Courses';
@@ -24,7 +24,7 @@ function App() {
         <div className="container">
           <Routes>
             <Route path="/courses" element={<Courses />} />
-            {/* <Route path="/login" element={<Login />} /> */}
+            <Route path="/login" element={<Login />} />
             {/* 
               If you have a page where you don't want Navbar and Footer, 
               don't include them in the Routes component.

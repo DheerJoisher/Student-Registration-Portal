@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom';
+import styles from "./Login.module.css";
+
 function SignInForm() {
   const [state, setState] = React.useState({
     email: "",
@@ -28,9 +30,9 @@ function SignInForm() {
   };
 
   return (
-    <div className="form-container sign-in-container">
-      <form onSubmit={handleOnSubmit}>
-        <h1>Student Login</h1>
+    <div className={`${styles.Login_formContainer} ${styles.Login_signInContainer}`}>
+      <form onSubmit={handleOnSubmit} className={styles.Login_form}>
+      <h1 style={{color: 'black', fontSize: "30px", fontWeight: "bold", margin: 0 }}>Student Login</h1>
         <input
           type="email"
           placeholder="Email"
@@ -38,6 +40,7 @@ function SignInForm() {
           value={state.email}
           onChange={handleChange}
           required
+          className={styles.Login_input}
         />
         <input
           type="password"
@@ -46,9 +49,10 @@ function SignInForm() {
           value={state.password}
           onChange={handleChange}
           required
+          className={styles.Login_input}
         />
-         <Link to="/studentlogin"><button>Sign In</button></Link>
-         <Link to="/error200" style={{color: 'black'}}>Forgot your Password?</Link>
+         <Link to="/studentlogin"><button className={styles.Login_button}>Sign In</button></Link>
+         <Link to="/error200" className={styles.Login_a} style={{color: 'black'}}>Forgot your Password?</Link>
       </form>
     </div>
   );
