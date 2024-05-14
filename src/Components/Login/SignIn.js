@@ -48,7 +48,7 @@ function SignInForm() {
           required
         />
          <Link to="/studentlogin"><button>Sign In</button></Link>
-         <a href="#">Forgot your password?</a>
+         <Link to="/error200" style={{color: 'black'}}>Forgot your Password?</Link>
       </form>
     </div>
   );
