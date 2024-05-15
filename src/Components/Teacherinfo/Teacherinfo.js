@@ -1,16 +1,16 @@
 import React from 'react'
-import Navbar2 from './../../Components/StudNav/Navbar2';
-import Footer from './../../Components/Footer/Footer';
-export default function Studentinfo() {
+import Navbar3 from '../TeachNav/Navbar3';
+import Footer from '../Footer/Footer';
+export default function Teacherinfo() {
   return (
     <>
     <div>
-    <Navbar2 />
+    <Navbar3 />
     </div>
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', backgroundColor: '#f2f2f2', fontFamily: 'Arial, sans-serif' }}>
       <div style={{ width: '80%', maxWidth: '800px', padding: '20px' }}>
         <div style={{ backgroundColor: '#fff', border: '1px solid #ccc', borderRadius: '5px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)', padding: '20px', marginTop: '20px' }}>
-          <h1 style={{ fontSize: '20px', textAlign: 'center', marginBottom: '20px', marginTop: '50px' }}>Student Information</h1>
+          <h1 style={{ fontSize: '20px', textAlign: 'center', marginBottom: '20px', marginTop: '50px' }}>Teacher Information</h1>
           <form style={{ width: '100%', boxSizing: 'border-box' }} action="registration_process.php" method="POST">
             <div style={{ marginBottom: '20px' }}>
               <label style={{ fontWeight: 'bold', display: 'block', marginBottom: '5px'}} htmlFor="fullname">Full Name:</label>
@@ -41,13 +41,13 @@ export default function Studentinfo() {
 
             {/* Second Course Selection */}
             <div style={{ marginBottom: '20px' }}>
-              <label style={{ fontWeight: 'bold', display: 'block', marginBottom: '5px' }} htmlFor="teacherid">Registration ID:</label>
+              <label style={{ fontWeight: 'bold', display: 'block', marginBottom: '5px' }} htmlFor="teacherid">Teacher ID:</label>
               <input style={{ width: '100%', padding: '8px', border: '1px solid #ccc', borderRadius: '4px', boxSizing: 'border-box', backgroundColor: '#FAEDCD' }} id="teacherid" name="teacherid" required />
             </div>
 
             {/* Third Course Selection */}
             <div style={{ marginBottom: '20px' }}>
-              <label style={{ fontWeight: 'bold', display: 'block', marginBottom: '5px' }} htmlFor="facultyof">Year, Program, and Branch:</label>
+              <label style={{ fontWeight: 'bold', display: 'block', marginBottom: '5px' }} htmlFor="facultyof">Faculty of:</label>
               <input style={{ width: '100%', padding: '8px', border: '1px solid #ccc', borderRadius: '4px', boxSizing: 'border-box', backgroundColor: '#FAEDCD' }} id="facultyof" name="facultyof" required />
                 
             </div>

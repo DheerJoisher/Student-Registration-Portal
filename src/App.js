@@ -9,23 +9,25 @@ import Login from './Components/Login/Login';
 import Footer from './Components/Footer/Footer';
 import Courses from './Components/Courses/Courses';
 import Professor from './Components/Professor/Professor';
-import MyCalendar from './Components/MyCalendar/MyCalendar';
+import MyCalendar from './Components/MyCalendar/MyCalendar'
 import AnnouncementList from './Components/Announcements/AnnouncementList';
 import { AnnouncementProvider } from './Components/Announcements/Announcementcontext';
 import StudLandMain from './Components/StudLand/StudLandMain';
 import Fyit from './Components/Fyit/Fyit';
 import Registration from './Components/Registration/Registration';
 import Studentinfo from './Components/Studentinfo/Studentinfo';
+import Teacherinfo from './Components/Teacherinfo/Teacherinfo';
 import TeachLandMain from './Components/TeachLand/TeachLand';
 import ForgotPassword from './Components/ForgotPassword/ForgotPassword';
 import Navbar2 from './Components/StudNav/Navbar2';
 import Navbar3 from './Components/TeachNav/Navbar3';
 import Navbar1 from './Components/Navbar/Navbar1';
-import Teachfoot from './Components/Teachfoot/Teachfoot'
+import { CalendarProvider } from './Components/MyCalendar/CalendarContext';import Teachfoot from './Components/Teachfoot/Teachfoot'
 import Studfoot from './Components/Studfoot/Studfoot'
 function App() {
   return (
     <AnnouncementProvider>
+    <CalendarProvider>
       <Router>
         <div className="container">
           <Routes>
@@ -33,17 +35,38 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/" element={<MainPage />} />
             <Route path="/professor" element={<Professor />} />
-            <Route path="/calendar" element={<MyCalendar />} />
+            
             <Route path="/studentlogin" element={<StudLandMain />} />
             <Route path="/Fyit" element={<Fyit />} />
             <Route path="/studentlogin/Info" element={<Studentinfo />} />
             <Route path="/studentlogin/Registration" element={<Registration />} />
-            <Route path="/studentlogin/calendar" element={<MyCalendar />} />
+            
             <Route path="/Teachlogin" element={<TeachLandMain />} />
-            <Route path="/Teachlogin/Info" element={<Studentinfo />} />
+            <Route path="/Teachlogin/Info" element={<Teacherinfo />} />
             <Route path="/Teachlogin/Registration" element={<Registration />} />
-            <Route path="/Teachlogin/calendar" element={<MyCalendar />} />
+            
             <Route path="/error200" element={<ForgotPassword />} />
+            <Route path="/studentlogin/calendar" element={
+            <>
+            <Navbar2 />
+            <MyCalendar isTeacher={false} />
+            <Footer />
+            </>
+            } />
+            <Route path="/Teachlogin/calendar" element={
+            <>
+            <Navbar3 />
+            <MyCalendar isTeacher={true} />
+            <Footer />
+            </>
+          } />
+            <Route path="/calendar" element={
+            <>
+            <Navbar1 />
+            <MyCalendar isTeacher={false} />
+            <Footer/>
+            </>
+          } />
             
             <Route path="/studentlogin/announcements" element={
               <>
@@ -69,6 +92,7 @@ function App() {
           </Routes>
         </div>
       </Router>
+    </CalendarProvider>
     </AnnouncementProvider>
   );
 }

@@ -111,7 +111,7 @@ const containerStyle = {
   gridGap: '20px',
   padding: '20px',
   borderRadius: '8px',
-  background: 'linear-gradient(to bottom, #606060, rgba(96, 96, 96, 0.8), rgba(96, 96, 96, 0))',
+  background: '#808080',
 };
 const profileStyle = {
   backgroundColor: 'black',

@@ -1,13 +1,15 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import styles from "./Login.module.css";
 
-function SignInForm() {
+const SignInForm = () => {
   const [state, setState] = React.useState({
     email: "",
     password: ""
   });
-  const handleChange = evt => {
+  const navigate = useNavigate();
+
+  const handleChange = (evt) => {
     const value = evt.target.value;
     setState({
       ...state,
@@ -15,11 +17,21 @@ function SignInForm() {
     });
   };
 
-  const handleOnSubmit = evt => {
+  const handleOnSubmit = (evt) => {
     evt.preventDefault();
 
     const { email, password } = state;
-    alert(`You are login with email: ${email} and password: ${password}`);
+    const validCredentials = {
+      email: "student@example.com",
+      password: "password123"
+    };
+
+    if (email === validCredentials.email && password === validCredentials.password) {
+      alert("Login successful!");
+      navigate('/studentlogin'); // Redirect to student dashboard
+    } else {
+      alert("Invalid email or password");
+    }
 
     for (const key in state) {
       setState({
@@ -32,7 +44,7 @@ function SignInForm() {
   return (
     <div className={`${styles.Login_formContainer} ${styles.Login_signInContainer}`}>
       <form onSubmit={handleOnSubmit} className={styles.Login_form}>
-      <h1 style={{color: 'black', fontSize: "30px", fontWeight: "bold", margin: 0 }}>Student Login</h1>
+        <h1 style={{ color: 'black', fontSize: "30px", fontWeight: "bold", margin: 0 }}>Student Login</h1>
         <input
           type="email"
           placeholder="Email"
@@ -51,11 +63,11 @@ function SignInForm() {
           required
           className={styles.Login_input}
         />
-         <Link to="/studentlogin"><button className={styles.Login_button}>Sign In</button></Link>
-         <Link to="/error200" className={styles.Login_a} style={{color: 'black'}}>Forgot your Password?</Link>
+        <button type="submit" className={styles.Login_button}>Sign In</button>
+        <a href="/error200" className={styles.Login_a} style={{ color: 'black' }}>Forgot your Password?</a>
       </form>
     </div>
   );
-}
+};
 
 export default SignInForm;
