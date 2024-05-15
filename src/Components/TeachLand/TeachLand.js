@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './TeachLand.css';
 import Navbar3 from "../TeachNav/Navbar3";
-import Footer from "../Footer/Footer";
+import Footer from "../Teachfoot/Teachfoot";
 import t1 from './t1.png'
 import t2 from './t2.png'
 import t3 from './t3.png'

@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './StudLand.css';
 import Navbar2 from "../StudNav/Navbar2";
-import Footer from "../Footer/Footer";
+import Footer from "../Studfoot/Studfoot"
 import s1 from './s1.png'
 import s2 from './s2.png'
 import s3 from './s3.png'

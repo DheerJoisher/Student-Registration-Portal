@@ -21,7 +21,8 @@ import ForgotPassword from './Components/ForgotPassword/ForgotPassword';
 import Navbar2 from './Components/StudNav/Navbar2';
 import Navbar3 from './Components/TeachNav/Navbar3';
 import Navbar1 from './Components/Navbar/Navbar1';
-
+import Teachfoot from './Components/Teachfoot/Teachfoot'
+import Studfoot from './Components/Studfoot/Studfoot'
 function App() {
   return (
     <AnnouncementProvider>
@@ -48,14 +49,14 @@ function App() {
               <>
                 <Navbar2 />
                 <AnnouncementList isTeacher={false} />
-                <Footer />
+                <Studfoot />
               </>
             } />
             <Route path="/Teachlogin/announcements" element={
               <>
                 <Navbar3 />
                 <AnnouncementList isTeacher={true} />
-                <Footer />
+                <Teachfoot />
               </>
             } />
             <Route path="/announcements" element={

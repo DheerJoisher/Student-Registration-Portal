@@ -110,7 +110,7 @@ const containerStyle = {
   gridGap: '20px',
   padding: '20px',
   borderRadius: '8px',
-  backgroundColor: '#90E0EF',
+  backgroundColor: '#838181',
 };
 
 const profileStyle = {
