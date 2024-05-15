@@ -23,6 +23,8 @@ import Navbar2 from './Components/StudNav/Navbar2';
 import Navbar3 from './Components/TeachNav/Navbar3';
 import Navbar1 from './Components/Navbar/Navbar1';
 import { CalendarProvider } from './Components/MyCalendar/CalendarContext';
+import Teachfoot from './Components/Teachfoot/Teachfoot'
+import Studfoot from './Components/Studfoot/Studfoot'
 function App() {
   return (
     <AnnouncementProvider>
@@ -36,7 +38,7 @@ function App() {
             <Route path="/professor" element={<Professor />} />
             
             <Route path="/studentlogin" element={<StudLandMain />} />
-            <Route path="/Fyit" element={<Fyit />} />
+            
             <Route path="/studentlogin/Info" element={<Studentinfo />} />
             <Route path="/studentlogin/Registration" element={<Registration />} />
             
@@ -49,14 +51,14 @@ function App() {
             <>
             <Navbar2 />
             <MyCalendar isTeacher={false} />
-            <Footer />
+            <Studfoot />
             </>
             } />
             <Route path="/Teachlogin/calendar" element={
             <>
             <Navbar3 />
             <MyCalendar isTeacher={true} />
-            <Footer />
+            <Teachfoot />
             </>
           } />
             <Route path="/calendar" element={
@@ -66,19 +68,41 @@ function App() {
             <Footer/>
             </>
           } />
+
+           <Route path="/studentlogin/fyit" element={
+            <>
+            <Navbar2 />
+            <Fyit/>
+            <Studfoot />
+            </>
+            } />
+            <Route path="/Teachlogin/fyit" element={
+            <>
+            <Navbar3 />
+            <Fyit/>
+            <Teachfoot />
+            </>
+          } />
+            <Route path="/Fyit" element={
+            <>
+            <Navbar1 />
+            <Fyit/>
+            <Footer/>
+            </>
+          } />
             
             <Route path="/studentlogin/announcements" element={
               <>
                 <Navbar2 />
                 <AnnouncementList isTeacher={false} />
-                <Footer />
+                <Studfoot />
               </>
             } />
             <Route path="/Teachlogin/announcements" element={
               <>
                 <Navbar3 />
                 <AnnouncementList isTeacher={true} />
-                <Footer />
+                <Teachfoot />
               </>
             } />
             <Route path="/announcements" element={

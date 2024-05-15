@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar3 from '../TeachNav/Navbar3';
-import Footer from '../Footer/Footer';
+import Teachfoot from '../Teachfoot/Teachfoot';
 export default function Teacherinfo() {
   return (
     <>
@@ -63,7 +63,7 @@ export default function Teacherinfo() {
       </div>
     </div>
     <div>
-    <Footer />
+    <Teachfoot />
     </div>
     </>
   );
