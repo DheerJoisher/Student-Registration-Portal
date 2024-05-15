@@ -6,50 +6,70 @@ import {
 } from "react-router-dom";
 import MainPage from './Components/Main/MainPage';
 import Login from './Components/Login/Login';
-// import Navbar1 from './Components/Navbar/Navbar1';
-// import Footer from './Components/Footer/Footer';
+import Footer from './Components/Footer/Footer';
 import Courses from './Components/Courses/Courses';
 import Professor from './Components/Professor/Professor';
 import MyCalendar from './Components/MyCalendar/MyCalendar';
-import Announcements1 from './Components/Announcements/Announcements1';
+import AnnouncementList from './Components/Announcements/AnnouncementList';
+import { AnnouncementProvider } from './Components/Announcements/Announcementcontext';
 import StudLandMain from './Components/StudLand/StudLandMain';
 import Fyit from './Components/Fyit/Fyit';
 import Registration from './Components/Registration/Registration';
 import Studentinfo from './Components/Studentinfo/Studentinfo';
 import TeachLandMain from './Components/TeachLand/TeachLand';
-import ForgotPassword from './Components/ForgotPassword/ForgotPassword'
+import ForgotPassword from './Components/ForgotPassword/ForgotPassword';
+import Navbar2 from './Components/StudNav/Navbar2';
+import Navbar3 from './Components/TeachNav/Navbar3';
+import Navbar1 from './Components/Navbar/Navbar1';
+
 function App() {
   return (
-    <Router>
+    <AnnouncementProvider>
+      <Router>
         <div className="container">
           <Routes>
             <Route path="/courses" element={<Courses />} />
             <Route path="/login" element={<Login />} />
-            {/* 
-              If you have a page where you don't want Navbar and Footer, 
-              don't include them in the Routes component.
-            */}
             <Route path="/" element={<MainPage />} />
             <Route path="/professor" element={<Professor />} />
             <Route path="/calendar" element={<MyCalendar />} />
-            <Route path="/announcements" element={<Announcements1 />} />
             <Route path="/studentlogin" element={<StudLandMain />} />
             <Route path="/Fyit" element={<Fyit />} />
             <Route path="/studentlogin/Info" element={<Studentinfo />} />
             <Route path="/studentlogin/Registration" element={<Registration />} />
-            <Route path="/studentlogin/announcements" element={<Announcements1 />} />
             <Route path="/studentlogin/calendar" element={<MyCalendar />} />
             <Route path="/Teachlogin" element={<TeachLandMain />} />
             <Route path="/Teachlogin/Info" element={<Studentinfo />} />
             <Route path="/Teachlogin/Registration" element={<Registration />} />
-            <Route path="/Teachlogin/announcements" element={<Studentinfo />} />
-            <Route path="/Teachlogin/calender" element={<Registration />} />
+            <Route path="/Teachlogin/calendar" element={<MyCalendar />} />
             <Route path="/error200" element={<ForgotPassword />} />
+            
+            <Route path="/studentlogin/announcements" element={
+              <>
+                <Navbar2 />
+                <AnnouncementList isTeacher={false} />
+                <Footer />
+              </>
+            } />
+            <Route path="/Teachlogin/announcements" element={
+              <>
+                <Navbar3 />
+                <AnnouncementList isTeacher={true} />
+                <Footer />
+              </>
+            } />
+            <Route path="/announcements" element={
+              <>
+                <Navbar1 />
+                <AnnouncementList isTeacher={false} />
+                <Footer />
+              </>
+            } />
           </Routes>
         </div>
-    </Router>
+      </Router>
+    </AnnouncementProvider>
   );
 }
-
 
 export default App;
