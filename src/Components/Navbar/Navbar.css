@@ -94,9 +94,6 @@ a {
 		align-items: center;	
 		margin-left: 10px;
 	}
-	.login{
-		margin-bottom: 50px;
-	}
 	.login-button:hover {
 		transform: scale(1.1);
 	}

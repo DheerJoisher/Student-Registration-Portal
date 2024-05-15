@@ -11,13 +11,13 @@ export default function ProfileCard() {
   return (
     <>
       <Navbar1 />
-      <h1 style={{ color: '#03045E', textAlign: 'center', fontFamily: 'Arial', fontSize: '50px' }}>Meet the Team!</h1>
+      <h1 style={{ color: '#222222', textAlign: 'center', fontFamily: 'Arial', fontSize: '50px' }}>Meet the Team!</h1>
 
       <div style={containerStyle}>
         {/* Professor 1 */}
         <div style={profileStyle}>
           <img src={dheer} alt="Dheer" style={imageStyle} />
-          <h1 style={{ fontSize: '20px', fontWeight: 'bold' }}>Dheer Joisher, 231080020</h1>
+          <h1 style={{ fontSize: '20px', fontWeight: 'bold', color:'aqua' }}>Dheer Joisher, 231080020</h1>
           <p style={pstyles}>
           The visionary coder who turns coffee into code, leading the team with innovation and precision.
           <div style={iconContainerStyle}> 
@@ -33,7 +33,7 @@ export default function ProfileCard() {
 
         <div style={profileStyle}>
           <img src={paanchi} alt="Paanchi" style={imageStyle} />
-          <h1 style={{ fontSize: '20px', fontWeight: 'bold' }}> Paanchi Nahar, 231081042</h1>
+          <h1 style={{ fontSize: '20px', fontWeight: 'bold', color:'aqua' }}> Paanchi Nahar, 231081042</h1>
           <p style={pstyles}>
            The creative mind crafting user-friendly interfaces, bringing elegance to every design element.
           <div style={iconContainerStyle}> 
@@ -49,7 +49,7 @@ export default function ProfileCard() {
 
         <div style={profileStyle}>
           <img src={vaishvi} alt="Paanchi" style={imageStyle} />
-          <h1 style={{ fontSize: '20px', fontWeight: 'bold' }}>Vaishvi Khandelwal, 231081074</h1>
+          <h1 style={{ fontSize: '20px', fontWeight: 'bold' , color:'aqua'}}>Vaishvi Khandelwal, 231081074</h1>
           <p style={pstyles}>
           The meticulous organizer behind the scenes, ensuring seamless integration and functionality.
           <div style={iconContainerStyle}> 
@@ -65,7 +65,7 @@ export default function ProfileCard() {
 
         <div style={profileStyle}>
           <img src={pratham} alt="Pratham" style={imageStyle} />
-          <h1 style={{ fontSize: '20px', fontWeight: 'bold' }}>Pratham Bhamare, 231080012</h1>
+          <h1 style={{ fontSize: '20px', fontWeight: 'bold', color:'aqua' }}>Pratham Bhamare, 231080012</h1>
           <p style={pstyles}>
           The problem-solving wizard, transforming complex challenges into elegant solutions with ease.
           <div style={iconContainerStyle}> 
@@ -81,7 +81,7 @@ export default function ProfileCard() {
 
         <div style={profileStyle}>
           <img src={sahil} alt="Sahil" style={imageStyle} />
-          <h1 style={{ fontSize: '20px', fontWeight: 'bold' }}>Sahil Langhe, 231080039</h1>
+          <h1 style={{ fontSize: '20px', fontWeight: 'bold', color:'aqua' }}>Sahil Langhe, 231080039</h1>
           <p style={pstyles}>
           The steadfast backbone of the team, offering invaluable assistance in crafting and fine-tuning component.
           <div style={iconContainerStyle}> 
@@ -110,11 +110,11 @@ const containerStyle = {
   gridGap: '20px',
   padding: '20px',
   borderRadius: '8px',
-  backgroundColor: '#90E0EF',
+  backgroundColor: '#808080',
 };
 
 const profileStyle = {
-  backgroundColor: '#fff',
+  backgroundColor: 'black',
   padding: '20px',
   borderRadius: '8px',
   boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)'
@@ -138,7 +138,7 @@ const linkStyle = {
 
 const pstyles = {
   textDecoration: 'none',
-  color: 'black',
+  color: 'white',
   fontSize: '16px',
   marginBottom: '0px',
   marginTop: '0px',
