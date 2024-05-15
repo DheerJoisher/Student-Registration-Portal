@@ -12,6 +12,7 @@ export default function Studentinfo() {
           <div style={{ backgroundColor: '#fff', border: '1px solid #ccc', borderRadius: '5px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)', padding: '20px', marginTop: '20px' }}>
             <h1 style={{ fontSize: '20px', textAlign: 'center', marginBottom: '20px', marginTop: '50px' }}>Student Information</h1>
             <form style={{ width: '100%', boxSizing: 'border-box' }} action="registration_process.php" method="POST">
+
             
             <div style={{ marginBottom: '20px' }}>
               <label style={{ fontWeight: 'bold', display: 'block', marginBottom: '5px'}} htmlFor="fullname">Full Name:</label>
