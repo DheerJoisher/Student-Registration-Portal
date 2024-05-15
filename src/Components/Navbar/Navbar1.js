@@ -12,7 +12,7 @@ const Navbar1 = () => {
           <li><Link className='navbar-text' to="/Announcements">Announcements</Link></li>
           <li><Link className='navbar-text' to="/calendar">Calender</Link></li>
           <div className="login-button">
-                   <Link to="/login">Login</Link>
+                   <Link className='login' to="/login">Login</Link>
                   </div>
       </ul>
 	</header> 
