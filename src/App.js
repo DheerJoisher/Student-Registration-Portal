@@ -16,6 +16,7 @@ import StudLandMain from './Components/StudLand/StudLandMain';
 import Fyit from './Components/Fyit/Fyit';
 import Registration from './Components/Registration/Registration';
 import Studentinfo from './Components/Studentinfo/Studentinfo';
+import Teacherinfo from './Components/Teacherinfo/Teacherinfo';
 import TeachLandMain from './Components/TeachLand/TeachLand';
 import ForgotPassword from './Components/ForgotPassword/ForgotPassword';
 import Navbar2 from './Components/StudNav/Navbar2';
@@ -40,7 +41,7 @@ function App() {
             <Route path="/studentlogin/Registration" element={<Registration />} />
             
             <Route path="/Teachlogin" element={<TeachLandMain />} />
-            <Route path="/Teachlogin/Info" element={<Studentinfo />} />
+            <Route path="/Teachlogin/Info" element={<Teacherinfo />} />
             <Route path="/Teachlogin/Registration" element={<Registration />} />
             
             <Route path="/error200" element={<ForgotPassword />} />
