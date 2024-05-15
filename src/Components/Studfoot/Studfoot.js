@@ -14,16 +14,16 @@ function Footer() {
       <div className="footer-column">
         <h2 style={{ fontSize: '20px' }}><b>Quick Links</b></h2>
         <ul>
-          <li><Link className='footer' to="/courses">Info</Link></li>
-          <li><Link className='footer' to="/professor">Registration</Link></li>
-          <li><Link className='footer' to="/Announcements">Announcements</Link></li>
-          <li><Link className='footer' to="/calendar">Calender</Link></li>
+          <li><Link className='footer' to="/studentlogin/info">Info</Link></li>
+          <li><Link className='footer' to="/studentlogin/registration">Registration</Link></li>
+          <li><Link className='footer' to="/studentlogin/Announcements">Announcements</Link></li>
+          <li><Link className='footer' to="/studentlogin/calendar">Calender</Link></li>
         </ul>
       </div>
       <div className="footer-column">
         <h2 style={{ fontSize: '20px' }}><b>Follow Us</b></h2>
         <ul>
-          <li><Link to="/Fyit">FY IT</Link></li>
+          <li><Link to="/Studentlogin/fyit">FY IT</Link></li>
           <li>231080012, 231080020</li>
           <li>231081039, 231081042</li>
           <li>231081074</li>
