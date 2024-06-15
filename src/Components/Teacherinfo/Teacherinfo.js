@@ -7,7 +7,7 @@ export default function Teacherinfo() {
     <div>
     <Navbar3 />
     </div>
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', backgroundColor: '#f2f2f2', fontFamily: 'Arial, sans-serif' }}>
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: 'calc(100vh - 120px)', backgroundColor: '#808080', fontFamily: 'Arial, sans-serif' }}>
       <div style={{ width: '80%', maxWidth: '800px', padding: '20px' }}>
         <div style={{ backgroundColor: '#fff', border: '1px solid #ccc', borderRadius: '5px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)', padding: '20px', marginTop: '20px' }}>
           <h1 style={{ fontSize: '20px', textAlign: 'center', marginBottom: '20px', marginTop: '50px' }}>Teacher Information</h1>
