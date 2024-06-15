@@ -23,7 +23,7 @@ function Footer() {
       <div className="footer-column">
         <h2 style={{ fontSize: '20px' }}><b>Follow Us</b></h2>
         <ul>
-          <li><Link to="/Fyit">FY IT</Link></li>
+          <li><Link style={{fontWeight: 'bold' ,color: '#bfa75d' }} to="/Fyit">FY IT</Link></li>
           <li>231080012, 231080020</li>
           <li>231081039, 231081042</li>
           <li>231081074</li>

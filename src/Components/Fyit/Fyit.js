@@ -10,7 +10,7 @@ import Footer from './../../Components/Footer/Footer';
 export default function ProfileCard() {
   return (
     <>
-      <Navbar1 />
+    
       <h1 style={{ color: '#222222', textAlign: 'center', fontFamily: 'Arial', fontSize: '50px' }}>Meet the Team!</h1>
 
       <div style={containerStyle}>
@@ -96,7 +96,7 @@ export default function ProfileCard() {
         </div>
 
       </div>
-      <Footer />
+     
     </>
   )
 }

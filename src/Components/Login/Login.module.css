@@ -172,9 +172,9 @@
 }
 
 .Login_overlay {
-  background: #ff416c;
-  background: -webkit-linear-gradient(to right, #ff4b2b, #ff416c);
-  background: linear-gradient(to right, #ff4b2b, #ff416c);
+  background: #010FCC;
+  background: -webkit-linear-gradient(to right, #000439, #010FCC);
+  background: linear-gradient(to right, #000439, #010FCC);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0;
